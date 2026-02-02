@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Clube de Robótica</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">🤖 Clube de Robótica</div>
+
+    <nav>
+      <a href="#projeto">O Projeto</a>
+      <a href="#oficinas">Oficinas</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#participar">Como Participar</a>
+    </nav>
+  </header>
+
+  <!-- TOPO -->
+  <section class="topo">
+    <img src="img/topo.png" alt="Clube de Robótica">
+  </section>
+
+  <!-- CTA + REDES -->
+  <section class="cta-redes">
+    <a href="https://forms.gle/KCEFHoZbdXpVukPQA" target="_blank">
+      <button>Quero Participar</button>
+    </a>
+
+    <div class="redes">
+      <a
+        href="https://www.instagram.com/clube_de_robotica_de_paulista?igsh=MWhhc3VzcnVxa3NobA=="
+        target="_blank"
+      >
+        <img src="img/ins.png" alt="Instagram">
+      </a>
+
+      <a href="https://wa.me/5581985503305" target="_blank">
+        <img src="img/wha.png" alt="WhatsApp">
+      </a>
+    </div>
+  </section>
+
+  <!-- PROJETO -->
+  <section id="projeto">
+    <h2>O Projeto</h2>
+   <p>
+  O Clube de Robótica é uma iniciativa educacional itinerante nos bairros de
+  Paulista, apresentando o microcontrolador Arduino e seus sensores aplicados
+  à automação, tecnologia e pensamento computacional.
+</p>
+
+<div class="btn-projeto">
+  <a href="https://drive.google.com/file/d/1vFN6laFeQmCRUl-0USafWKLmF6taVxWJ/view?usp=sharing" target="_blank">
+    <button>Ler projeto completo</button>
+  </a>
+</div>
+  </section>
+
+  <!-- OFICINAS -->
+  <!-- VÍDEOS DO PROJETO -->
+<section id="videos" class="bg">
+  <h2>Vídeos do Projeto</h2>
+
+  <div class="videos-grid">
+
+    <!-- VÍDEO 1 -->
+    <div class="video-card">
+      <h3>Oficina – Sensor Infra Vermelho</h3>
+      <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CPdI9kCLtso?si=r1OVo63Y6abgmaIh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- VÍDEO 2 -->
+    <div class="video-card">
+      <h3>Oficina – Sensor de som</h3>
+      <div class="video-wrapper">
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/7xP7j2udmF0?si=_HnKN-xizB_hM_hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- VÍDEO 3 -->
+    <div class="video-card">
+      <h3>Oficina – Sensores e Automação</h3>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/ID_DO_VIDEO_3"
+          title="Sensores e Automação"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- GALERIA -->
+  <section id="galeria">
+    <h2>Fotos</h2>
+
+    <div class="galeria">
+      <img src="img/1.png" onclick="abrirImagem(this)">
+      <img src="img/2.png" onclick="abrirImagem(this)">
+      <img src="img/3.png" onclick="abrirImagem(this)">
+      <img src="img/4.png" onclick="abrirImagem(this)">
+      <img src="img/5.png" onclick="abrirImagem(this)">
+      <img src="img/6.png" onclick="abrirImagem(this)">
+    </div>
+  </section>
+
+  <!-- COMO PARTICIPAR -->
+  <section id="participar" class="bg">
+    <h2>Como Participar</h2>
+  <p>
+  As oficinas são <strong>gratuitas para estudantes da rede pública</strong>.
+  O projeto, no entanto, é aberto à participação de todos os interessados,
+  respeitando a disponibilidade de vagas e os critérios de cada oficina.
+  As inscrições são realizadas online.
+</p>
+  </section>
+    <section class="cta-redes">
+    <a href="https://forms.gle/KCEFHoZbdXpVukPQA" target="_blank">
+      <button>Quero Participar</button>
+    </a>
+
+    <div class="redes">
+      <a
+        href="https://www.instagram.com/clube_de_robotica_de_paulista?igsh=MWhhc3VzcnVxa3NobA=="
+        target="_blank"
+      >
+        <img src="img/ins.png" alt="Instagram">
+      </a>
+
+      <a href="https://wa.me/5581985503305" target="_blank">
+        <img src="img/wha.png" alt="WhatsApp">
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Clube de Robótica – Projeto Educacional</p>
+  </footer>
+
+  <!-- MODAL GALERIA -->
+  <div id="modalImagem" class="modal">
+    <span class="close" onclick="fecharImagem()">×</span>
+    <img id="imgAmpliada" class="img-ampliada">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

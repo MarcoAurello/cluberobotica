@@ -1,0 +1,268 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f4f9ff;
+  color: #333;
+}
+
+/* ================= HEADER ================= */
+header {
+  background: #0b5ed7;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  flex-wrap: wrap;            /* RESPONSIVO */
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* ================= TOPO ================= */
+.topo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= CTA + REDES ================= */
+.cta-redes {
+  text-align: center;
+  padding: 16px 12px 20px;   /* COMPACTO */
+}
+
+.cta-redes button {
+  background: red;
+  color: yellow;
+  border: none;
+  font-size: 16px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 8px;           /* BEM PRÓXIMO */
+}
+
+.redes img {
+  width: 26px;
+  height: 26px;
+}
+
+/* ================= SEÇÕES ================= */
+section {
+  padding: 48px 20px;        /* MENOS ESPAÇO */
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 26px;
+  margin-bottom: 14px;
+  color: #0b5ed7;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.bg {
+  background: #eaf2ff;
+}
+
+/* ================= CARDS ================= */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  list-style: none;
+}
+
+.cards li {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  font-size: 15px;
+}
+
+/* ================= GALERIA ================= */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+}
+
+.galeria img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #0b5ed7;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
+}
+
+/* ================= MODAL ================= */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.img-ampliada {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  margin: 5% auto;
+  border-radius: 16px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 34px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= MOBILE FINO ================= */
+@media (max-width: 600px) {
+  section {
+    padding: 36px 16px;
+  }
+
+  section h2 {
+    font-size: 22px;
+  }
+
+  .cta-redes button {
+    font-size: 15px;
+    padding: 10px 24px;
+  }
+
+  .galeria img {
+    height: 150px;
+  }
+}
+.card-video h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #0b5ed7;
+  text-align: center;
+}
+
+/* PROPORÇÃO VERTICAL (Short) */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 177%; /* 9:16 */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.btn-projeto {
+  margin-top: 20px;
+}
+
+.btn-projeto button {
+  background: #0b5ed7;
+  color: white;
+  border: none;
+  font-size: 15px;
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-projeto button:hover {
+  background: #094db5;
+  transform: translateY(-2px);
+}
+
+/* ================= VÍDEOS ================= */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.video-card {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.video-card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #0b5ed7;
+  text-align: center;
+}
+
+/* RESPONSIVO */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
