@@ -352,10 +352,10 @@ footer {
 }
 
 body {
-  background-color: #f4f9ff;
+
   background-image: url("img/bg.jpg");
   background-repeat: repeat;          /* ou no-repeat */
-  background-size: 600px;              /* controla “força” do desenho */
+  background-size: 1000px;              /* controla “força” do desenho */
   background-position: center;
 }
 
@@ -363,7 +363,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(255, 255, 255, 0.88); /* QUANTO MAIOR, MAIS CLARO */
+  background: rgba(255, 255, 255, 0.90); /* QUANTO MAIOR, MAIS CLARO */
   z-index: -1;
 }
 
@@ -375,6 +375,7 @@ body::before {
   .topo img {
     border-radius: 14px;
     box-shadow: 0 14px 35px rgba(0,0,0,0.2);
+    
   }
 }
 
