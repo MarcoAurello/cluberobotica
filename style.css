@@ -7,23 +7,25 @@
 }
 
 body {
-  background: #f4f9ff;
-  color: #333;
+  background: linear-gradient(180deg, #f4f9ff, #eef4ff);
+  color: #1f2937;
 }
+
 
 /* ================= HEADER ================= */
 header {
-  background: #0b5ed7;
+  background: linear-gradient(135deg, #0b5ed7, #1d4ed8);
   color: white;
-  padding: 12px 20px;
+  padding: 14px 24px;
   display: flex;
-  flex-wrap: wrap;            /* RESPONSIVO */
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
 
 .logo {
@@ -41,6 +43,22 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #fde047; /* amarelo tech */
+  transition: width 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 /* ================= TOPO ================= */
@@ -97,7 +115,7 @@ section p {
 }
 
 .bg {
-  background: #eaf2ff;
+  background: linear-gradient(135deg, #eaf2ff, #dbeafe);
 }
 
 /* ================= CARDS ================= */
@@ -263,6 +281,84 @@ footer {
   width: 100%;
   height: 100%;
 }
+
+/* ================= CARROSSEL ================= */
+.carousel {
+  position: relative;
+  max-width: 900px;      /* TAMANHO MEDIANO */
+  margin: 30px auto 0;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  background: #000;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  min-width: 100%;
+  max-height: 500px;     /* ALTURA MEDIANA */
+  object-fit: contain;  /* MOSTRA FOTO INTEIRA */
+  background: #000;     /* barras pretas se necessário */
+}
+
+/* BOTÕES */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 32px;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.carousel-btn.prev {
+  left: 15px;
+}
+
+.carousel-btn.next {
+  right: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .carousel {
+    max-width: 100%;
+  }
+
+  .carousel-track img {
+    max-height: 300px;
+  }
+}
+
+body {
+  background-color: #f4f9ff;
+  background-image: url("img/bg.jpg");
+  background-repeat: repeat;          /* ou no-repeat */
+  background-size: 600px;              /* controla “força” do desenho */
+  background-position: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.88); /* QUANTO MAIOR, MAIS CLARO */
+  z-index: -1;
+}
+
 
 
 

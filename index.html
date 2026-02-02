@@ -114,17 +114,23 @@
 
   <!-- GALERIA -->
   <section id="galeria">
-    <h2>Fotos</h2>
+  <h2>Fotos das Oficinas</h2>
 
-    <div class="galeria">
-      <img src="img/1.png" onclick="abrirImagem(this)">
-      <img src="img/2.png" onclick="abrirImagem(this)">
-      <img src="img/3.png" onclick="abrirImagem(this)">
-      <img src="img/4.png" onclick="abrirImagem(this)">
-      <img src="img/5.png" onclick="abrirImagem(this)">
-      <img src="img/6.png" onclick="abrirImagem(this)">
+  <div class="carousel">
+    <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+
+    <div class="carousel-track">
+      <img src="img/1.png" alt="Oficina 1">
+      <img src="img/2.png" alt="Oficina 2">
+      <img src="img/3.png" alt="Oficina 3">
+      <img src="img/4.png" alt="Oficina 4">
+      <img src="img/5.png" alt="Oficina 5">
+      <img src="img/6.png" alt="Oficina 6">
     </div>
-  </section>
+
+    <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+  </div>
+</section>
 
   <!-- COMO PARTICIPAR -->
   <section id="participar" class="bg">
